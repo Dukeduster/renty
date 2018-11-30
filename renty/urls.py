@@ -24,5 +24,6 @@ urlpatterns = [
     url(r'^rentals/', views.RentalView.as_view()),
     url(r'^cars/$', views.CarView.as_view()),
     url(r'^cars/(?P<carid>[-\w]+)/$', views.CarView.as_view()),
-    url(r'^cars/search$', views.CarSearchView.as_view())
+    url(r'^cars/search$', views.CarSearchView.as_view()),
+    url(r'^cars/token$', views.ReservationView.as_view())
 ]
